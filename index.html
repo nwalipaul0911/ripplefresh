@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ripple — Fresh Laundry, Delivered</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:wght@200;300;400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -121,6 +122,7 @@ nav {
   font-size: 18px;
   box-shadow: 0 0 0 4px rgba(0,180,216,0.18);
   transition: box-shadow 0.3s;
+  padding: 4px;
 }
 .nav-logo:hover .nav-logo-mark { box-shadow: 0 0 0 8px rgba(0,180,216,0.2); }
 .nav-logo-name {
@@ -773,7 +775,7 @@ h2 em { font-style: italic; color: var(--mid); }
 }
 
 /* ══ Testimonials ═══════════════════════════════════════════════ */
-#testimonials { background: var(--foam); }
+#goals { background: var(--foam); }
 
 .testimonials-grid {
   display: grid;
@@ -1011,9 +1013,12 @@ h2 em { font-style: italic; color: var(--mid); }
   margin: 0 auto;
 }
 .cta-icon {
-  font-size: 56px;
-  display: block;
-  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 24px;
   animation: drift 5s ease-in-out infinite;
 }
 #cta h2 { color: #fff; margin-bottom: 16px; }
@@ -1150,7 +1155,7 @@ footer {
   <a href="#hero"         onclick="closeDrawer()">Home</a>
   <a href="#services"     onclick="closeDrawer()">Services</a>
   <a href="#how"          onclick="closeDrawer()">How It Works</a>
-  <a href="#testimonials" onclick="closeDrawer()">Reviews</a>
+  <a href="#goals" onclick="closeDrawer()">Our Goals</a>
   <a href="#pricing"      onclick="closeDrawer()">Pricing</a>
   <a href="#cta" class="drawer-btn" onclick="closeDrawer()">Book a Collection</a>
 </div>
@@ -1158,7 +1163,7 @@ footer {
 <!-- Navigation -->
 <nav>
   <a href="#hero" class="nav-logo">
-    <div class="nav-logo-mark">🫧</div>
+    <div class="nav-logo-mark"><img src="favicon.svg" alt="Ripple Logo" style="width:100%; height:100%; object-fit:contain;"></div>
     <div>
       <span class="nav-logo-name">Ripple</span>
       <span class="nav-logo-tag">Fresh Laundry</span>
@@ -1168,7 +1173,7 @@ footer {
   <ul class="nav-links">
     <li><a href="#services">Services</a></li>
     <li><a href="#how">How It Works</a></li>
-    <li><a href="#testimonials">Reviews</a></li>
+    <li><a href="#goals">Our Goals</a></li>
     <li><a href="#pricing">Pricing</a></li>
     <li><a href="#cta" class="nav-btn">Book Now</a></li>
   </ul>
@@ -1218,16 +1223,16 @@ footer {
 
       <div class="hero-stats">
         <div>
-          <div class="stat-num">12k+</div>
-          <div class="stat-label">Happy Clients</div>
+          <div class="stat-num">Sustainable</div>
+          <div class="stat-label">Laundry Solutions</div>
         </div>
         <div>
-          <div class="stat-num">24h</div>
-          <div class="stat-label">Turnaround</div>
+          <div class="stat-num">Community</div>
+          <div class="stat-label">Focused Service</div>
         </div>
         <div>
-          <div class="stat-num">4.9★</div>
-          <div class="stat-label">Average Rating</div>
+          <div class="stat-num">Quality</div>
+          <div class="stat-label">Excellence</div>
         </div>
       </div>
     </div>
@@ -1240,7 +1245,7 @@ footer {
           <div class="hcard-title">Wash & Fold</div>
           <p class="hcard-sub">Premium detergents, perfect temperatures, expertly folded and packaged.</p>
           <div class="hcard-row">
-            <div class="hcard-price">from £18</div>
+            <div class="hcard-price">from ₦18,000</div>
             <div class="hcard-tag">24h Ready</div>
           </div>
         </div>
@@ -1275,25 +1280,25 @@ footer {
         <div class="svc-icon-wrap">🧺</div>
         <div class="svc-title">Wash & Fold</div>
         <p class="svc-desc">Your everyday laundry washed at precise temperatures with premium eco-certified detergents, dried and folded to perfection.</p>
-        <div class="svc-price">From £18 per bag</div>
+        <div class="svc-price">From ₦18,000 per bag</div>
       </div>
       <div class="svc reveal">
         <div class="svc-icon-wrap">👔</div>
         <div class="svc-title">Dry Cleaning</div>
         <p class="svc-desc">Professional solvent cleaning for suits, silk, cashmere, and all delicate fabrics needing specialist treatment.</p>
-        <div class="svc-price">From £8 per item</div>
+        <div class="svc-price">From ₦8,000 per item</div>
       </div>
       <div class="svc reveal">
         <div class="svc-icon-wrap">🪡</div>
         <div class="svc-title">Iron & Press</div>
         <p class="svc-desc">Crisp, hotel-quality pressing with industrial steam equipment. Shirts, trousers, formal wear — perfectly finished.</p>
-        <div class="svc-price">From £3 per item</div>
+        <div class="svc-price">From ₦3,000 per item</div>
       </div>
       <div class="svc reveal">
         <div class="svc-icon-wrap">🛏</div>
         <div class="svc-title">Bedding & Linen</div>
         <p class="svc-desc">Duvets, pillows, bedsheets, and towels deep-cleaned and returned fresh, soft, and hygienically spotless.</p>
-        <div class="svc-price">From £14 per set</div>
+        <div class="svc-price">From ₦14,000 per set</div>
       </div>
       <div class="svc reveal">
         <div class="svc-icon-wrap">✨</div>
@@ -1304,8 +1309,8 @@ footer {
       <div class="svc reveal">
         <div class="svc-icon-wrap">🚚</div>
         <div class="svc-title">Free Collection</div>
-        <p class="svc-desc">Schedule a pickup and we'll collect from your door at a time that suits you. Free on all orders over £40.</p>
-        <div class="svc-price">Free over £40</div>
+        <p class="svc-desc">Schedule a pickup and we'll collect from your door at a time that suits you. Free on all orders over ₦40,000.</p>
+        <div class="svc-price">Free over ₦40,000</div>
       </div>
     </div>
   </div>
@@ -1359,50 +1364,50 @@ footer {
   </div>
 </section>
 
-<!-- Testimonials -->
-<section id="testimonials">
+<!-- Our Goals -->
+<section id="goals">
   <div class="container">
     <div style="text-align:center; margin-bottom:56px" class="reveal">
-      <div class="section-eyebrow" style="justify-content:center">Client Reviews</div>
-      <h2>Trusted by thousands<br>across the <em>city.</em></h2>
+      <div class="section-eyebrow" style="justify-content:center">Our Mission</div>
+      <h2>Building a better<br><em>laundry experience.</em></h2>
     </div>
     <div class="testimonials-grid">
       <div class="tcard reveal">
         <div class="tcard-stars">
-          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          <span class="star">🌱</span>
         </div>
-        <p class="tcard-text">I honestly can't believe the quality. My white shirts came back brighter than the day I bought them. Ripple is now a non-negotiable part of my week.</p>
+        <p class="tcard-text">To provide eco-friendly laundry services that minimize environmental impact through sustainable practices and green detergents.</p>
         <div class="tcard-author">
-          <div class="author-init">D</div>
+          <div class="author-init">S</div>
           <div>
-            <div class="author-name">Daniel Okafor</div>
-            <div class="author-handle">Finance Director</div>
+            <div class="author-name">Sustainability</div>
+            <div class="author-handle">Core Value</div>
           </div>
         </div>
       </div>
       <div class="tcard reveal">
         <div class="tcard-stars">
-          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          <span class="star">👥</span>
         </div>
-        <p class="tcard-text">Collecting and delivering on the same day — I was sceptical but they delivered flawlessly. My duvet set looks and smells absolutely incredible.</p>
+        <p class="tcard-text">To create jobs and support local communities by building a team of dedicated professionals committed to excellent service.</p>
         <div class="tcard-author">
-          <div class="author-init">P</div>
+          <div class="author-init">C</div>
           <div>
-            <div class="author-name">Priya Mehta</div>
-            <div class="author-handle">Interior Consultant</div>
+            <div class="author-name">Community</div>
+            <div class="author-handle">Core Value</div>
           </div>
         </div>
       </div>
       <div class="tcard reveal">
         <div class="tcard-stars">
-          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          <span class="star">⭐</span>
         </div>
-        <p class="tcard-text">The dry cleaning on my evening wear is impeccable. They removed a red wine stain I thought was permanent. Remarkable service, remarkable results.</p>
+        <p class="tcard-text">To deliver unparalleled quality in every load, ensuring customer satisfaction through attention to detail and honest service.</p>
         <div class="tcard-author">
-          <div class="author-init">A</div>
+          <div class="author-init">Q</div>
           <div>
-            <div class="author-name">Amara Diallo</div>
-            <div class="author-handle">Creative Director</div>
+            <div class="author-name">Quality</div>
+            <div class="author-handle">Core Value</div>
           </div>
         </div>
       </div>
@@ -1422,14 +1427,14 @@ footer {
       <div class="pcard reveal">
         <div class="plan-name">Essentials</div>
         <div class="plan-sub">Pay as you go</div>
-        <div class="plan-price">£18</div>
+        <div class="plan-price">₦18,000</div>
         <div class="plan-cycle">per bag</div>
         <ul class="plan-features">
           <li><span class="tick">✓</span>Wash &amp; Fold</li>
           <li><span class="tick">✓</span>48-hour turnaround</li>
           <li><span class="tick">✓</span>Stain treatment</li>
           <li><span class="tick">✓</span>Eco detergents</li>
-          <li><span class="tick">✓</span>Free delivery over £40</li>
+          <li><span class="tick">✓</span>Free delivery over ₦40,000</li>
         </ul>
         <a href="#cta" class="plan-btn plan-btn-outline">Get Started</a>
       </div>
@@ -1438,7 +1443,7 @@ footer {
         <div class="popular-chip">Most Popular</div>
         <div class="plan-name">Regular</div>
         <div class="plan-sub">Weekly service</div>
-        <div class="plan-price">£52</div>
+        <div class="plan-price">₦52,000</div>
         <div class="plan-cycle">per month</div>
         <ul class="plan-features">
           <li><span class="tick">✓</span>Unlimited Wash &amp; Fold</li>
@@ -1454,7 +1459,7 @@ footer {
       <div class="pcard reveal">
         <div class="plan-name">Prestige</div>
         <div class="plan-sub">White glove</div>
-        <div class="plan-price">£120</div>
+        <div class="plan-price">₦120,000</div>
         <div class="plan-cycle">per month</div>
         <ul class="plan-features">
           <li><span class="tick">✓</span>All services included</li>
@@ -1473,12 +1478,12 @@ footer {
 <!-- CTA -->
 <section id="cta">
   <div class="cta-container reveal">
-    <span class="cta-icon">🫧</span>
+    <span class="cta-icon"><img src="favicon.svg" alt="Ripple Logo" style="width:100%; height:100%; object-fit:contain;"></span>
     <div class="section-eyebrow" style="justify-content:center; color:var(--accent2)">Start Today</div>
     <h2 style="color:#fff">Your first collection<br><em style="color:var(--accent2)">20% off.</em></h2>
     <p class="lead">Book now and experience the Ripple difference. Fresh, clean, delivered — the way it should always be.</p>
     <div class="cta-btns">
-      <a href="tel:+442012345678" class="cta-main" style="background:#fff; color:var(--navy); box-shadow:0 8px 32px rgba(0,0,0,0.25)">
+      <a href="tel:+2348088064266" class="cta-main" style="background:#fff; color:var(--navy); box-shadow:0 8px 32px rgba(0,0,0,0.25)">
         📞 Call Us Now
       </a>
       <a href="mailto:hello@ripple.co.uk" class="cta-ghost">
@@ -1494,7 +1499,7 @@ footer {
     <div>
       <div class="footer-brand-name">Ripple</div>
       <span class="footer-brand-tag">Premium Laundry Service</span>
-      <p class="footer-brand-desc">Professional laundry and dry cleaning collected and delivered to your door. Serving the city since 2020.</p>
+      <p class="footer-brand-desc">Professional laundry and dry cleaning collected and delivered to your door. </p>
       <div class="footer-socials">
         <a href="#" class="fsocial" aria-label="Instagram">ig</a>
         <a href="#" class="fsocial" aria-label="Facebook">fb</a>
@@ -1516,24 +1521,21 @@ footer {
       <div class="footer-col-head">Company</div>
       <ul>
         <li><a href="#">About Us</a></li>
-        <li><a href="#">Sustainability</a></li>
-        <li><a href="#">Careers</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Press</a></li>
+        <li><a href="#">Policy</a></li>
       </ul>
     </div>
     <div class="footer-col">
       <div class="footer-col-head">Contact</div>
       <ul>
         <li><p>hello@ripple.co.uk</p></li>
-        <li><p>+44 20 1234 5678</p></li>
+        <li><p>+234 808 806 4266</p></li>
         <li><p>Mon–Sat: 7am – 9pm</p></li>
         <li><p>Sun: 9am – 5pm</p></li>
       </ul>
     </div>
   </div>
   <div class="footer-bottom">
-    <p class="footer-copy">© 2025 Ripple Laundry Services Ltd. All rights reserved.</p>
+    <p class="footer-copy">&copy <i id="currentYear"></i> Ripple Laundry Services Ltd. All rights reserved.</p>
     <div class="footer-legal">
       <a href="#">Privacy Policy</a>
       <a href="#">Terms of Service</a>
@@ -1585,6 +1587,11 @@ window.addEventListener('scroll', () => {
     ? 'rgba(8,18,38,0.97)'
     : 'rgba(8,18,38,0.85)';
 });
+
+// ── Set current year in footer ────────────────────────────────────
+document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+
 </script>
 
 </body>
